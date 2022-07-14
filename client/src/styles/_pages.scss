@@ -1,0 +1,111 @@
+// 1st sec
+.first-section {
+    margin-left: 40vw;
+    margin-right: 10vw;
+    border-radius: 50%;
+    padding-bottom: 20vh;
+
+    .first-description-container {
+        line-height: 5rem;
+
+        .first-description {
+            // must be text-align instead of flexbox cause otherwise the words (spans)
+            // will ignore the space between them
+            text-align: right;
+
+            font-family: "Cedarville Cursive", cursive;
+            font-size: 4rem;
+            text-shadow: 0 0 5px darkgoldenrod, 0 0 5px darkgoldenrod;
+        }
+    }
+
+    .social-medias {
+        display: flex;
+        justify-content: right;
+
+        margin-top: 10vh;
+
+        .social-media-card {
+            .logo {
+                width: 5vw;
+                height: 5vw;
+            }
+        }
+    }
+}
+
+// my face - not added yet, but this is the template for it
+.left-cover {
+    position: absolute;
+    left: 12vw;
+    margin-top: 5vh;
+
+    > img {
+        width: 25vw;
+        height: 25vw;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 300px darkgoldenrod, 0 0 300px darkgoldenrod,
+                0 0 300px darkgoldenrod;
+        }
+    }
+}
+
+// layered waves transition
+.spacer {
+    // position: absolute;
+    // left: 0;
+    width: 100%;
+    height: var(--after-first-section);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.svg-trans-1 {
+    background-image: url("../../public//svgs/lw.svg");
+}
+
+// 2nd sec
+.secondary-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+    min-height: 80vh;
+    // margin-top: var(--after-first-section);
+    background-color: var(--nblue-2);
+
+    > header {
+        font-size: 3.5rem;
+    }
+
+    .description {
+        margin-top: 3vh;
+        font-size: 2rem;
+    }
+}
+
+// blogs section
+.blogs-page {
+    margin-left: 10vw;
+    margin-left: 10vw;
+    margin-top: 30vh;
+
+    min-height: 100vh;
+}
+
+// error page
+.error-page-container {
+    height: 100vh;
+    padding: 5%;
+
+    * {
+        font-size: 3rem;
+    }
+}

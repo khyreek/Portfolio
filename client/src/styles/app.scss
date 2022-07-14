@@ -1,0 +1,70 @@
+@use "main-header";
+@use "main-footer";
+
+// page structuring
+@use "pages";
+
+// utility
+@use "animations";
+@use "responsiveness";
+@use "positioned-fixed";
+@use "utility";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    transition: 0.1s ease;
+}
+
+html {
+    font-size: clamp(3px, 0.8vw + 0.1em, 120px);
+
+    // shading
+    --slightly-shaded-opacity: 0.8;
+    --slightly-shaded-text: rgba(0, 0, 0, --slightly-shaded-opacity);
+
+    /* blue-themed colour composition */
+    --blue-comp-1: #13293d;
+    --blue-comp-2: #006494;
+    --blue-comp-3: #247ba0;
+    --blue-comp-4: #1b98e0;
+    --blue-comp-5: #e8f1f2;
+    // nice blues
+    --nblue-1: #000052;
+    --nblue-2: #2a6594;
+    // --nblue-1: gray;
+
+    // font size
+    --large-font-size: 5rem;
+    --medium-large-font-size: 3rem;
+
+    // misc
+    --standard-horizontal-padding: 5%;
+    --standard-vertical-padding: 3%;
+
+    // spacing
+    // spacing between sections
+    // Read more in docs/notes.md
+    --after-first-section: 35vh;
+}
+
+body {
+    background-color: var(--nblue-1);
+    color: white;
+}
+
+.app {
+    // @debugging
+
+    // height: 500vh;
+}
+
+// add to 'positioned-absolute.scss'
+
+/* fonts */
+// @import url("[font_url]") // font-family: ...
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap"); // font-family: "Edu VIC WA NT Beginner", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"); // font-family: 'Cinzel', serif;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"); // font-family: 'Cedarville Cursive', cursive;

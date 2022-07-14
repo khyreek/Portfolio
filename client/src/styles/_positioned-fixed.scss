@@ -1,0 +1,27 @@
+.banner-message {
+    position: fixed;
+    top: 25px;
+    left: -40vw;
+    transform: rotate(-25deg);
+
+    background-color: var(--blue-comp-4);
+    font-size: 5rem;
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    padding-top: clamp(1px, 5vw, 40px);
+    padding-bottom: clamp(1px, 5vw, 40px);
+    padding-left: 40%;
+    padding-right: 40%;
+    transition: 0.5s ease;
+    z-index: 9999;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--blue-comp-5);
+        color: black;
+    }
+
+    .banner-text {
+        transform: translateY(-20%);
+    }
+}

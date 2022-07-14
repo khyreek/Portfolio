@@ -1,0 +1,23 @@
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 3vw;
+    background-color: black;
+    min-height: 30vh;
+    color: white !important;
+
+    * {
+        font-size: 3rem;
+    }
+
+    > *:not(:last-child) {
+        padding-bottom: 1%;
+    }
+
+    .source-code-link *,
+    .mail-to-link * {
+        text-decoration: initial;
+    }
+}

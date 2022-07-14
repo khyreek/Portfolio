@@ -1,0 +1,16 @@
+{
+    "extends": "next/core-web-vitals",
+    "rules": {
+        "import/order": [
+            "warn",
+            {
+                "newlines-between": "always"
+            }
+        ],
+        "no-console": "warn",
+        "newline-before-return": "off",
+        "no-useless-return": "warn",
+        "prefer-const": "warn",
+        "no-unused-vars": "warn"
+    }
+}

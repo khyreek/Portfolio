@@ -1,0 +1,27 @@
+.main-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1111;
+    text-align: right;
+
+    margin-bottom: 15vh;
+    margin-left: 30vw;
+    height: 15vh;
+    padding: 1vw;
+    border-bottom-left-radius: 30vw;
+
+    background-color: lightblue;
+    background-color: var(--blue-comp-4);
+
+    > nav {
+        // selects the next Link component
+        height: 100%;
+
+        .nav-link {
+            width: 10vw;
+            background-color: var(--blue-comp-1);
+            height: 10.5vh !important;
+        }
+    }
+}
